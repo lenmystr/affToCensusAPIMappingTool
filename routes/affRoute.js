@@ -3,7 +3,7 @@ const router = express.Router();
 
 const affApi = require('../client/affApi');
 
-router.get('/getAFFColumns', function(req, res) {
+router.get('/getColumns', function(req, res) {
   let program = req.query.program;
   let dataSet = req.query.dataSet;
   let tableId = req.query.tableId;

@@ -1,57 +1,35 @@
 const httpClient = require('axios');
 
 
-function dataBaseUrl(year,dataset, uri, variableString, stateId) {
-    return `https://api.census.gov/data/${year}/${dataset}${uri}?get=${variableString}&for=county:*&in=state:${stateId}`
+function dataBaseUrl(year,dataset, variableString, stateId) {
+    return `https://api.census.gov/data/${year}/${dataset}?get=${variableString}&for=county:*&in=state:${stateId}`
 }
 
-function variablesBaseUrl(year, dataset, uri) {
-    return `https://api.census.gov/data/${year}/${dataset}${uri}/variables.json`
+function variablesBaseUrl(year, dataset) {
+    return `https://api.census.gov/data/${year}/${dataset}/variables.json`
 }
-
-const profileURI = '/profile';
-const subjectURI = '/subject';
 
 const apiKey = process.env["API_KEY"];
 
-exports.getTableData = async function (year, dataset, variableString, stateId) {
-    let uri = '';
-    let url = dataBaseUrl(year, dataset, uri, variableString, stateId);
+exports.getData = async function (year, dataset, variableStringArray, stateId) {
+
+    let objectArray = variableStringArray.variableString;
+    let variableString = '';
+
+    objectArray.forEach(function myFunction(value, index, array) {
+        variableString = variableString.concat(value);
+        if (index+1 < array.length){
+            variableString = variableString.concat(',');
+        }
+    })
+
+    let url = dataBaseUrl(year, dataset, variableString, stateId);
     let response =  await executeQuery(url);
     return response;
 };
 
-exports.getProfileData = async function (year, dataset, variableString, stateId) {
-    let uri = profileURI;
-    let url = dataBaseUrl(year, dataset, uri, variableString, stateId);
-    let response =  await executeQuery(url);
-    return response;
-};
-
-exports.getSubjectData = async function (year, dataset, variableString, stateId) {
-    let uri = subjectURI;
-    let url = dataBaseUrl(year, dataset, uri, variableString, stateId);
-    let response =  await executeQuery(url);
-    return response;
-};
-
-exports.getTableVariables = async function (year, dataset) {
-    let uri = '';
-    let url = variablesBaseUrl(year, dataset, uri);
-    let response =  await executeQuery(url);
-    return response;
-};
-
-exports.getProfileVariables = async function (year,dataset) {
-    let uri = profileURI;
-    let url = variablesBaseUrl(year, dataset, uri);
-    let response =  await executeQuery(url);
-    return response;
-};
-
-exports.getSubjectVariables = async function (year,dataset) {
-    let uri = subjectURI;
-    let url = variablesBaseUrl(year, dataset, uri);
+exports.getVariables = async function (year, dataset) {
+    let url = variablesBaseUrl(year, dataset);
     let response =  await executeQuery(url);
     return response;
 };

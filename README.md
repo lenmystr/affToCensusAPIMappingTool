@@ -22,15 +22,28 @@ Example for an ACS 5YR dataset:
 Another key difference is that access to the Census datasets are broken up into several APIs outlined in [Census Available Apis].
 
 Where in AFF you reference data by a program (ie. ACS, DEC, etc) and a dataset  within that program that includes reference to the year (ie: 13_5YR, 10_SF1, etc), in Census all data is reference by a year and dataset only (ie. acs/acs5, dec/sf1, etc).
-You can find all Census datasets available listed in the table [Census Data]
+You can find all Census datasets available that are available for each year listed in the table [Census Data]
 
 Given an AFF Table and Column, the tool will find the corresponsing Census Variable ID.
+
+`/mapping/getMappings`
 
 ### Get AFF Column Information
 Given an AFF Table, this functionality returns column information for that table.  Used withing the mapping functionality.
 
+`/aff/getColumns`
+
 ### Get Census Variables
 Given a Census dataset, returns the variables.
+
+`/census/getVariables`
+
+### Get Census Data
+Given a Census dataset, year and variable list, gets the data from the Census API.
+The variable list is supplied in the body to fascilitate management since it can be 
+rather large.
+
+`/census/data/getData`
 
 ## Local Setup
 
