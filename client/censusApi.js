@@ -1,12 +1,12 @@
 const httpClient = require('axios');
 
 
-function dataBaseUrl(year, program, dataset, uri, variableString, stateId) {
-    return `https://api.census.gov/data/${year}/${program}/${dataset}${uri}?get=${variableString}&for=county:*&in=state:${stateId}`
+function dataBaseUrl(year,dataset, uri, variableString, stateId) {
+    return `https://api.census.gov/data/${year}/${dataset}${uri}?get=${variableString}&for=county:*&in=state:${stateId}`
 }
 
-function variablesBaseUrl(year, program, dataset, uri) {
-    return `https://api.census.gov/data/${year}/${program}/${dataset}${uri}/variables.json`
+function variablesBaseUrl(year, dataset, uri) {
+    return `https://api.census.gov/data/${year}/${dataset}${uri}/variables.json`
 }
 
 const profileURI = '/profile';
@@ -14,44 +14,44 @@ const subjectURI = '/subject';
 
 const apiKey = process.env["API_KEY"];
 
-exports.getTableData = async function (year, program, dataset, variableString, stateId) {
+exports.getTableData = async function (year, dataset, variableString, stateId) {
     let uri = '';
-    let url = dataBaseUrl(year, program, dataset, uri, variableString, stateId);
+    let url = dataBaseUrl(year, dataset, uri, variableString, stateId);
     let response =  await executeQuery(url);
     return response;
 };
 
-exports.getProfileData = async function (year, program, dataset, variableString, stateId) {
+exports.getProfileData = async function (year, dataset, variableString, stateId) {
     let uri = profileURI;
-    let url = dataBaseUrl(year, program, dataset, uri, variableString, stateId);
+    let url = dataBaseUrl(year, dataset, uri, variableString, stateId);
     let response =  await executeQuery(url);
     return response;
 };
 
-exports.getSubjectData = async function (year, program, dataset, variableString, stateId) {
+exports.getSubjectData = async function (year, dataset, variableString, stateId) {
     let uri = subjectURI;
-    let url = dataBaseUrl(year, program, dataset, uri, variableString, stateId);
+    let url = dataBaseUrl(year, dataset, uri, variableString, stateId);
     let response =  await executeQuery(url);
     return response;
 };
 
-exports.getTableVariables = async function (year, program, dataset) {
+exports.getTableVariables = async function (year, dataset) {
     let uri = '';
-    let url = variablesBaseUrl(year, program, dataset, uri);
+    let url = variablesBaseUrl(year, dataset, uri);
     let response =  await executeQuery(url);
     return response;
 };
 
-exports.getProfileVariables = async function (year, program, dataset) {
+exports.getProfileVariables = async function (year,dataset) {
     let uri = profileURI;
-    let url = variablesBaseUrl(year, program, dataset, uri);
+    let url = variablesBaseUrl(year, dataset, uri);
     let response =  await executeQuery(url);
     return response;
 };
 
-exports.getSubjectVariables = async function (year, program, dataset) {
+exports.getSubjectVariables = async function (year,dataset) {
     let uri = subjectURI;
-    let url = variablesBaseUrl(year, program, dataset, uri);
+    let url = variablesBaseUrl(year, dataset, uri);
     let response =  await executeQuery(url);
     return response;
 };

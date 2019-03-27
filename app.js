@@ -4,7 +4,9 @@ var bodyParser = require('body-parser');
 
 var logger = require('morgan');
 
-var mappingRoute = require('./routes/mapping');
+var mappingRoute = require('./routes/mappingRoute');
+var censusRoute = require('./routes/censusRoute');
+var affRoute = require('./routes/affRoute');
 
 var app = express();
 
@@ -18,5 +20,7 @@ app.use(bodyParser.json());
 
 
 app.use('/mapping', mappingRoute);
+app.use('/census', censusRoute);
+app.use('/aff', affRoute);
 
 module.exports = app;

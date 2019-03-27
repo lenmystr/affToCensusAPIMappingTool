@@ -7,9 +7,9 @@ const census_variable_label_delimiter = '!!';
 const aff_id_delimiter = '_';
 const aff_label_delimiter = '; ';
 
-const acs_detail_table_regex = /[B,C]\d{5}.{0,3}/;
-const acs_subject_table_regex = /S\d{4}.{0,3}/;
-const acs_data_profile_table_regex = /DP\d{2}.{0,2}/;
+const acs_acs5_detail_table_regex = /[B,C]\d{5}.{0,3}/;
+const acs_acs5_subject_table_regex = /S\d{4}.{0,3}/;
+const acs_acs5_data_profile_table_regex = /DP\d{2}.{0,2}/;
 const dec_sf1_table_regex = /[P,H](CT){0,1}\d{1,2}.{0,2}/;
 
 
@@ -29,26 +29,25 @@ exports.buildmappingtable = async function (tableId, aff_program, dataSet, geoId
     // compose census year
     let census_year = "20"+aff_year;
 
-    //determine the census program and dataset
+    //determine the census dataset
     let aff_map_key = aff_program+"_"+aff_dataset;
-    let census_program = affToCensusMap[aff_map_key].census_program;
     let census_dataset = affToCensusMap[aff_map_key].census_dataset;
 
 
 
     //determine which API the target data resides in and get the appropriate variables
-    if (tableId.match(acs_data_profile_table_regex)!= null) {
+    if (tableId.match(acs_acs5_data_profile_table_regex)!= null) {
         g_table_type = tabletype.acs_profile;
-        variables = await censusAPI.getProfileVariables(census_year, census_program, census_dataset);
-    } else if (tableId.match(acs_subject_table_regex) != null) {
+        variables = await censusAPI.getProfileVariables(census_year, census_dataset);
+    } else if (tableId.match(acs_acs5_subject_table_regex) != null) {
         g_table_type = tabletype.acs_subject;
-        variables = await censusAPI.getSubjectVariables(census_year, census_program, census_dataset);
-    } else if (tableId.match(acs_detail_table_regex)!= null) {
+        variables = await censusAPI.getSubjectVariables(census_year, census_dataset);
+    } else if (tableId.match(acs_acs5_detail_table_regex)!= null) {
         g_table_type = tabletype.acs_detail;
-        variables = await censusAPI.getTableVariables(census_year, census_program, census_dataset);
+        variables = await censusAPI.getTableVariables(census_year, census_dataset);
     } else if (tableId.match(dec_sf1_table_regex ) != null){
       g_table_type = tabletype.dec_sf1;
-        variables = await censusAPI.getTableVariables(census_year, census_program, census_dataset);
+        variables = await censusAPI.getTableVariables(census_year, census_dataset);
     }
 
     // get the table headers for the target table
