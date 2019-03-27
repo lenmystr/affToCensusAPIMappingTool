@@ -1,0 +1,1189 @@
+{
+	"info": {
+		"_postman_id": "c4451ecc-74c6-451b-bc58-491c86776f39",
+		"name": "Measures For Justice Hackathon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Census API",
+			"item": [
+				{
+					"name": "ACS",
+					"item": [
+						{
+							"name": "Sample  Subject Get All Counties New York",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://api.census.gov/data/2013/acs/acs5/subject?get=S0503_C02_074E&for=county:*&in=state:36&key=<you API key>",
+									"protocol": "https",
+									"host": [
+										"api",
+										"census",
+										"gov"
+									],
+									"path": [
+										"data",
+										"2013",
+										"acs",
+										"acs5",
+										"subject"
+									],
+									"query": [
+										{
+											"key": "get",
+											"value": "S0503_C02_074E"
+										},
+										{
+											"key": "for",
+											"value": "county:*"
+										},
+										{
+											"key": "in",
+											"value": "state:36"
+										},
+										{
+											"key": "key",
+											"value": "<you API key>"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Sample  Data Profile Get All Counties New York",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://api.census.gov/data/2013/acs/acs5/profile?get=DP04_0125E,DP04_0067PE,DP05_0075PE,NAME&for=county:*&in=state:*&key=<you API key>",
+									"protocol": "https",
+									"host": [
+										"api",
+										"census",
+										"gov"
+									],
+									"path": [
+										"data",
+										"2013",
+										"acs",
+										"acs5",
+										"profile"
+									],
+									"query": [
+										{
+											"key": "get",
+											"value": "DP04_0125E,DP04_0067PE,DP05_0075PE,NAME"
+										},
+										{
+											"key": "for",
+											"value": "county:*"
+										},
+										{
+											"key": "in",
+											"value": "state:*"
+										},
+										{
+											"key": "key",
+											"value": "<you API key>"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2013 ACS 5 Year Subject Variables",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://api.census.gov/data/2013/acs/acs5/subject/variables.json",
+									"protocol": "https",
+									"host": [
+										"api",
+										"census",
+										"gov"
+									],
+									"path": [
+										"data",
+										"2013",
+										"acs",
+										"acs5",
+										"subject",
+										"variables.json"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2013 ACS 5 Year Detail Table Variables",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://api.census.gov/data/2013/acs/acs5/variables.json",
+									"protocol": "https",
+									"host": [
+										"api",
+										"census",
+										"gov"
+									],
+									"path": [
+										"data",
+										"2013",
+										"acs",
+										"acs5",
+										"variables.json"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2013 ACS 5 Year Data Profile Variables",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://api.census.gov/data/2013/acs/acs5/profile/variables.json",
+									"protocol": "https",
+									"host": [
+										"api",
+										"census",
+										"gov"
+									],
+									"path": [
+										"data",
+										"2013",
+										"acs",
+										"acs5",
+										"profile",
+										"variables.json"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Sample  Detail Table Get All Counties New York",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://api.census.gov/data/2013/acs/acs5?get=NAME,B01001A_022E&for=county:*&in=state:36&key=<you API key>",
+									"protocol": "https",
+									"host": [
+										"api",
+										"census",
+										"gov"
+									],
+									"path": [
+										"data",
+										"2013",
+										"acs",
+										"acs5"
+									],
+									"query": [
+										{
+											"key": "get",
+											"value": "NAME,B01001A_022E"
+										},
+										{
+											"key": "for",
+											"value": "county:*"
+										},
+										{
+											"key": "in",
+											"value": "state:36"
+										},
+										{
+											"key": "key",
+											"value": "<you API key>"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "DEC",
+					"item": [
+						{
+							"name": "2010 DEC SF1 Variables",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://api.census.gov/data/2010/dec/sf1/variables.json",
+									"protocol": "https",
+									"host": [
+										"api",
+										"census",
+										"gov"
+									],
+									"path": [
+										"data",
+										"2010",
+										"dec",
+										"sf1",
+										"variables.json"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Sample  Decennial Census Get All Counties New York Copy",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://api.census.gov/data/2010/dec/sf1?get=P028E003,P028E009,P028E003,NAME&for=county:*&in=state:*&key=<you API key>",
+									"protocol": "https",
+									"host": [
+										"api",
+										"census",
+										"gov"
+									],
+									"path": [
+										"data",
+										"2010",
+										"dec",
+										"sf1"
+									],
+									"query": [
+										{
+											"key": "get",
+											"value": "P028E003,P028E009,P028E003,NAME"
+										},
+										{
+											"key": "for",
+											"value": "county:*"
+										},
+										{
+											"key": "in",
+											"value": "state:*"
+										},
+										{
+											"key": "key",
+											"value": "<you API key>"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "2013 ACS 5 Year Subject Variables",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.census.gov/data/2013/acs/acs5/subject/variables.json",
+							"protocol": "https",
+							"host": [
+								"api",
+								"census",
+								"gov"
+							],
+							"path": [
+								"data",
+								"2013",
+								"acs",
+								"acs5",
+								"subject",
+								"variables.json"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Data API Discovery Tool",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.census.gov/data.json",
+							"protocol": "https",
+							"host": [
+								"api",
+								"census",
+								"gov"
+							],
+							"path": [
+								"data.json"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AFF API",
+			"item": [
+				{
+					"name": "ACS",
+					"item": [
+						{
+							"name": "Get ACS S0701 Table Columns",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://factfinder.census.gov/service/data/v1/en/programs/ACS/datasets/13_5YR/tables/S0701/data/0400000US36.05000?key=<you API key>",
+									"protocol": "https",
+									"host": [
+										"factfinder",
+										"census",
+										"gov"
+									],
+									"path": [
+										"service",
+										"data",
+										"v1",
+										"en",
+										"programs",
+										"ACS",
+										"datasets",
+										"13_5YR",
+										"tables",
+										"S0701",
+										"data",
+										"0400000US36.05000"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "<you API key>"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get ACS S1501 Table Columns",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://factfinder.census.gov/service/data/v1/en/programs/ACS/datasets/13_5YR/tables/S1501/data/0400000US36.05000?key=<you API key>",
+									"protocol": "https",
+									"host": [
+										"factfinder",
+										"census",
+										"gov"
+									],
+									"path": [
+										"service",
+										"data",
+										"v1",
+										"en",
+										"programs",
+										"ACS",
+										"datasets",
+										"13_5YR",
+										"tables",
+										"S1501",
+										"data",
+										"0400000US36.05000"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "<you API key>"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get ACS DP03 Table Columns",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://factfinder.census.gov/service/data/v1/en/programs/ACS/datasets/13_5YR/tables/DP03/data/0400000US36.05000?key=<you API key>",
+									"protocol": "https",
+									"host": [
+										"factfinder",
+										"census",
+										"gov"
+									],
+									"path": [
+										"service",
+										"data",
+										"v1",
+										"en",
+										"programs",
+										"ACS",
+										"datasets",
+										"13_5YR",
+										"tables",
+										"DP03",
+										"data",
+										"0400000US36.05000"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "<you API key>"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get ACS B01001 Table Columns",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://factfinder.census.gov/service/data/v1/en/programs/ACS/datasets/13_5YR/tables/B01001/data/0400000US36.05000?key=<you API key>",
+									"protocol": "https",
+									"host": [
+										"factfinder",
+										"census",
+										"gov"
+									],
+									"path": [
+										"service",
+										"data",
+										"v1",
+										"en",
+										"programs",
+										"ACS",
+										"datasets",
+										"13_5YR",
+										"tables",
+										"B01001",
+										"data",
+										"0400000US36.05000"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "<you API key>"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get ACS B05001 Table Columns",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://factfinder.census.gov/service/data/v1/en/programs/ACS/datasets/13_5YR/tables/B05001/data/0400000US36.05000?key=<you API key>",
+									"protocol": "https",
+									"host": [
+										"factfinder",
+										"census",
+										"gov"
+									],
+									"path": [
+										"service",
+										"data",
+										"v1",
+										"en",
+										"programs",
+										"ACS",
+										"datasets",
+										"13_5YR",
+										"tables",
+										"B05001",
+										"data",
+										"0400000US36.05000"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "<you API key>"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get ACS B05003 Table Columns",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://factfinder.census.gov/service/data/v1/en/programs/ACS/datasets/13_5YR/tables/B05003/data/0400000US36.05000?key=<you API key>",
+									"protocol": "https",
+									"host": [
+										"factfinder",
+										"census",
+										"gov"
+									],
+									"path": [
+										"service",
+										"data",
+										"v1",
+										"en",
+										"programs",
+										"ACS",
+										"datasets",
+										"13_5YR",
+										"tables",
+										"B05003",
+										"data",
+										"0400000US36.05000"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "<you API key>"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get ACS DP02 Table Columns",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://factfinder.census.gov/service/data/v1/en/programs/ACS/datasets/13_5YR/tables/DP02/data/0400000US36.05000?key=<you API key>",
+									"protocol": "https",
+									"host": [
+										"factfinder",
+										"census",
+										"gov"
+									],
+									"path": [
+										"service",
+										"data",
+										"v1",
+										"en",
+										"programs",
+										"ACS",
+										"datasets",
+										"13_5YR",
+										"tables",
+										"DP02",
+										"data",
+										"0400000US36.05000"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "<you API key>"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get ACS S2301 Table Columns",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://factfinder.census.gov/service/data/v1/en/programs/ACS/datasets/13_5YR/tables/S2301/data/0400000US36.05000?key=<you API key>",
+									"protocol": "https",
+									"host": [
+										"factfinder",
+										"census",
+										"gov"
+									],
+									"path": [
+										"service",
+										"data",
+										"v1",
+										"en",
+										"programs",
+										"ACS",
+										"datasets",
+										"13_5YR",
+										"tables",
+										"S2301",
+										"data",
+										"0400000US36.05000"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "<you API key>"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "DEC",
+					"item": [
+						{
+							"name": "Get DEC P2 Table Columns",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://factfinder.census.gov/service/data/v1/en/programs/DEC/datasets/10_SF1/tables/P2/data/0400000US36.05000?key=<you API key>",
+									"protocol": "https",
+									"host": [
+										"factfinder",
+										"census",
+										"gov"
+									],
+									"path": [
+										"service",
+										"data",
+										"v1",
+										"en",
+										"programs",
+										"DEC",
+										"datasets",
+										"10_SF1",
+										"tables",
+										"P2",
+										"data",
+										"0400000US36.05000"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "<you API key>"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		},
+		{
+			"name": "MappingTool APIs",
+			"item": [
+				{
+					"name": "[AFF] Get Table Columns",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:3000/aff/getColumns?program=ACS&dataSet=13_5YR&tableId=B05001&geoId=0400000US36.05000",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"aff",
+								"getColumns"
+							],
+							"query": [
+								{
+									"key": "program",
+									"value": "ACS"
+								},
+								{
+									"key": "dataSet",
+									"value": "13_5YR"
+								},
+								{
+									"key": "tableId",
+									"value": "B05001"
+								},
+								{
+									"key": "geoId",
+									"value": "0400000US36.05000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Column Mapping Table",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:3000/mapping/getMappings?program=DEC&dataSet=10_SF1&tableId=P2&geoId=0400000US36.05000",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"mapping",
+								"getMappings"
+							],
+							"query": [
+								{
+									"key": "program",
+									"value": "DEC",
+									"description": "AFF Program "
+								},
+								{
+									"key": "dataSet",
+									"value": "10_SF1",
+									"description": "AFF Dataset"
+								},
+								{
+									"key": "tableId",
+									"value": "P2",
+									"description": "AFF Table ID"
+								},
+								{
+									"key": "geoId",
+									"value": "0400000US36.05000",
+									"description": "Geo ID"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[CENSUS] Get Data",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"variableString\": [\n\"NAME\",\n\"B01001A_022E\"\n]}"
+						},
+						"url": {
+							"raw": "localhost:3000/census/data/getData?year=2013&dataSet=acs/acs5&stateId=*",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"census",
+								"data",
+								"getData"
+							],
+							"query": [
+								{
+									"key": "year",
+									"value": "2013"
+								},
+								{
+									"key": "dataSet",
+									"value": "acs/acs5"
+								},
+								{
+									"key": "stateId",
+									"value": "*"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[CENSUS] Get Variables",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:3000/census/getVariables?year=2013&dataSet=acs/acs5",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"census",
+								"getVariables"
+							],
+							"query": [
+								{
+									"key": "year",
+									"value": "2013"
+								},
+								{
+									"key": "dataSet",
+									"value": "acs/acs5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[CENSUS] Get ACS 5YR Detail Data",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"variableString\": [\n\"NAME\",\n\"B05001_006E\",\n\"B05001_001E\",\n\"B01001_001E\",\n\"B01001_006E\",\n\"B01001_007E\",\n\"B01001_008E\",\n\"B01001_009E\",\n\"B01001_010E\"\n]}"
+						},
+						"url": {
+							"raw": "localhost:3000/census/data/getData?year=2013&dataSet=acs/acs5&stateId=*",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"census",
+								"data",
+								"getData"
+							],
+							"query": [
+								{
+									"key": "year",
+									"value": "2013"
+								},
+								{
+									"key": "dataSet",
+									"value": "acs/acs5"
+								},
+								{
+									"key": "stateId",
+									"value": "*"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[CENSUS] Get DEC SF1 Data",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"variableString\": [\n\"NAME\",\n\"DIVISION\",\n\"P002001\",\n\"P002002\",\n\"P002005\"\n]}"
+						},
+						"url": {
+							"raw": "localhost:3000/census/data/getData?year=2010&dataSet=dec/sf1&stateId=*",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"census",
+								"data",
+								"getData"
+							],
+							"query": [
+								{
+									"key": "year",
+									"value": "2010"
+								},
+								{
+									"key": "dataSet",
+									"value": "dec/sf1"
+								},
+								{
+									"key": "stateId",
+									"value": "*"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[CENSUS] Get ACS 5YR Profile Data",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"variableString\": [\n\"NAME\",\n\"DP03_0025E\",\n\"DP03_0062E\",\n\"DP03_0128PE\",\n\"DP02_0001PE\",\n\"DP02_0009PE\",\n\"DP05_0066PE\",\n\"DP05_0072PE\",\n\"DP05_0073PE\",\n\"DP05_0074PE\",\n\"DP05_0075PE\",\n\"DP05_0076PE\",\n\"DP05_0077PE\",\n\"DP05_0078PE\"\n]}"
+						},
+						"url": {
+							"raw": "localhost:3000/census/data/getData?year=2013&stateId=*&dataSet=acs/acs5/profile",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"census",
+								"data",
+								"getData"
+							],
+							"query": [
+								{
+									"key": "year",
+									"value": "2013"
+								},
+								{
+									"key": "stateId",
+									"value": "*"
+								},
+								{
+									"key": "dataSet",
+									"value": "acs/acs5/profile"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[CENSUS] Get ACS 5YR Subject Data",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"variableString\": [\n\"NAME\",\n\"S1501_C01_014E\",\n\"S1501_C01_014EA\",\n\"S2301_C04_001E\",\n\"S0701_C02_001E\",\n\"S0701_C03_001E\",\n\"S0701_C04_001E\",\n\"S0701_C05_001E\"\n]}"
+						},
+						"url": {
+							"raw": "localhost:3000/census/data/getData?year=2013&stateId=*&dataSet=acs/acs5/subject",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"census",
+								"data",
+								"getData"
+							],
+							"query": [
+								{
+									"key": "year",
+									"value": "2013",
+									"description": "Census year"
+								},
+								{
+									"key": "stateId",
+									"value": "*",
+									"description": "State geo ID"
+								},
+								{
+									"key": "dataSet",
+									"value": "acs/acs5/subject",
+									"description": "Census dataset"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[CENSUS] Get ACS 5YR Subject Variables",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:3000/census/getVariables?year=2013&dataSet=acs/acs5/subject",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"census",
+								"getVariables"
+							],
+							"query": [
+								{
+									"key": "year",
+									"value": "2013"
+								},
+								{
+									"key": "dataSet",
+									"value": "acs/acs5/subject"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[CENSUS] Get ACS 5YR Profile Variables",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:3000/census/getVariables?year=2013&dataSet=acs/acs5/profile",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"census",
+								"getVariables"
+							],
+							"query": [
+								{
+									"key": "year",
+									"value": "2013"
+								},
+								{
+									"key": "dataSet",
+									"value": "acs/acs5/profile"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
