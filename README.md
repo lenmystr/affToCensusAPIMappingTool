@@ -45,6 +45,10 @@ rather large.
 
 `/census/data/getData`
 
+Sample service that supplements the Census data with a row including labels
+
+`/data/getDataWithLabels`
+
 ## Local Setup
 
 To setup this project:

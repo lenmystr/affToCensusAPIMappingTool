@@ -21,7 +21,7 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://api.census.gov/data/2013/acs/acs5/subject?get=S0503_C02_074E&for=county:*&in=state:36&key=<you API key>",
+									"raw": "https://api.census.gov/data/2013/acs/acs5/subject?get=S0503_C02_074E&for=county:*&in=state:36&key=<your Census API key>",
 									"protocol": "https",
 									"host": [
 										"api",
@@ -50,7 +50,7 @@
 										},
 										{
 											"key": "key",
-											"value": "<you API key>"
+											"value": "<your Census API key>"
 										}
 									]
 								}
@@ -67,7 +67,7 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://api.census.gov/data/2013/acs/acs5/profile?get=DP04_0125E,DP04_0067PE,DP05_0075PE,NAME&for=county:*&in=state:*&key=<you API key>",
+									"raw": "https://api.census.gov/data/2013/acs/acs5/profile?get=DP04_0125E,DP04_0067PE,DP05_0075PE,NAME&for=county:*&in=state:*&key=<your Census API key>",
 									"protocol": "https",
 									"host": [
 										"api",
@@ -96,7 +96,7 @@
 										},
 										{
 											"key": "key",
-											"value": "<you API key>"
+											"value": "<your Census API key>"
 										}
 									]
 								}
@@ -199,7 +199,7 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://api.census.gov/data/2013/acs/acs5?get=NAME,B01001A_022E&for=county:*&in=state:36&key=<you API key>",
+									"raw": "https://api.census.gov/data/2013/acs/acs5?get=NAME,B01001A_022E&for=county:*&in=state:36&key=<your Census API key>",
 									"protocol": "https",
 									"host": [
 										"api",
@@ -227,7 +227,7 @@
 										},
 										{
 											"key": "key",
-											"value": "<you API key>"
+											"value": "<your Census API key>"
 										}
 									]
 								}
@@ -278,7 +278,7 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://api.census.gov/data/2010/dec/sf1?get=P028E003,P028E009,P028E003,NAME&for=county:*&in=state:*&key=<you API key>",
+									"raw": "https://api.census.gov/data/2010/dec/sf1?get=P028E003,P028E009,P028E003,NAME&for=county:*&in=state:*&key=<your Census API key>",
 									"protocol": "https",
 									"host": [
 										"api",
@@ -306,7 +306,7 @@
 										},
 										{
 											"key": "key",
-											"value": "<you API key>"
+											"value": "<your Census API key>"
 										}
 									]
 								}
@@ -387,7 +387,7 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://factfinder.census.gov/service/data/v1/en/programs/ACS/datasets/13_5YR/tables/S0701/data/0400000US36.05000?key=<you API key>",
+									"raw": "https://factfinder.census.gov/service/data/v1/en/programs/ACS/datasets/13_5YR/tables/S0701/data/0400000US36.05000?key=<your Census API key>",
 									"protocol": "https",
 									"host": [
 										"factfinder",
@@ -411,7 +411,7 @@
 									"query": [
 										{
 											"key": "key",
-											"value": "<you API key>"
+											"value": "<your Census API key>"
 										}
 									]
 								}
@@ -428,7 +428,7 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://factfinder.census.gov/service/data/v1/en/programs/ACS/datasets/13_5YR/tables/S1501/data/0400000US36.05000?key=<you API key>",
+									"raw": "https://factfinder.census.gov/service/data/v1/en/programs/ACS/datasets/13_5YR/tables/S1501/data/0400000US36.05000?key=<your Census API key>",
 									"protocol": "https",
 									"host": [
 										"factfinder",
@@ -452,7 +452,7 @@
 									"query": [
 										{
 											"key": "key",
-											"value": "<you API key>"
+											"value": "<your Census API key>"
 										}
 									]
 								}
@@ -469,7 +469,7 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://factfinder.census.gov/service/data/v1/en/programs/ACS/datasets/13_5YR/tables/DP03/data/0400000US36.05000?key=<you API key>",
+									"raw": "https://factfinder.census.gov/service/data/v1/en/programs/ACS/datasets/13_5YR/tables/DP03/data/0400000US36.05000?key=<your Census API key>",
 									"protocol": "https",
 									"host": [
 										"factfinder",
@@ -493,7 +493,7 @@
 									"query": [
 										{
 											"key": "key",
-											"value": "<you API key>"
+											"value": "<your Census API key>"
 										}
 									]
 								}
@@ -510,7 +510,7 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://factfinder.census.gov/service/data/v1/en/programs/ACS/datasets/13_5YR/tables/B01001/data/0400000US36.05000?key=<you API key>",
+									"raw": "https://factfinder.census.gov/service/data/v1/en/programs/ACS/datasets/13_5YR/tables/B01001/data/0400000US36.05000?key=<your Census API key>",
 									"protocol": "https",
 									"host": [
 										"factfinder",
@@ -534,7 +534,7 @@
 									"query": [
 										{
 											"key": "key",
-											"value": "<you API key>"
+											"value": "<your Census API key>"
 										}
 									]
 								}
@@ -551,7 +551,7 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://factfinder.census.gov/service/data/v1/en/programs/ACS/datasets/13_5YR/tables/B05001/data/0400000US36.05000?key=<you API key>",
+									"raw": "https://factfinder.census.gov/service/data/v1/en/programs/ACS/datasets/13_5YR/tables/B05001/data/0400000US36.05000?key=<your Census API key>",
 									"protocol": "https",
 									"host": [
 										"factfinder",
@@ -575,7 +575,7 @@
 									"query": [
 										{
 											"key": "key",
-											"value": "<you API key>"
+											"value": "<your Census API key>"
 										}
 									]
 								}
@@ -592,7 +592,7 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://factfinder.census.gov/service/data/v1/en/programs/ACS/datasets/13_5YR/tables/B05003/data/0400000US36.05000?key=<you API key>",
+									"raw": "https://factfinder.census.gov/service/data/v1/en/programs/ACS/datasets/13_5YR/tables/B05003/data/0400000US36.05000?key=<your Census API key>",
 									"protocol": "https",
 									"host": [
 										"factfinder",
@@ -616,7 +616,7 @@
 									"query": [
 										{
 											"key": "key",
-											"value": "<you API key>"
+											"value": "<your Census API key>"
 										}
 									]
 								}
@@ -633,7 +633,7 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://factfinder.census.gov/service/data/v1/en/programs/ACS/datasets/13_5YR/tables/DP02/data/0400000US36.05000?key=<you API key>",
+									"raw": "https://factfinder.census.gov/service/data/v1/en/programs/ACS/datasets/13_5YR/tables/DP02/data/0400000US36.05000?key=<your Census API key>",
 									"protocol": "https",
 									"host": [
 										"factfinder",
@@ -657,7 +657,7 @@
 									"query": [
 										{
 											"key": "key",
-											"value": "<you API key>"
+											"value": "<your Census API key>"
 										}
 									]
 								}
@@ -674,7 +674,7 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://factfinder.census.gov/service/data/v1/en/programs/ACS/datasets/13_5YR/tables/S2301/data/0400000US36.05000?key=<you API key>",
+									"raw": "https://factfinder.census.gov/service/data/v1/en/programs/ACS/datasets/13_5YR/tables/S2301/data/0400000US36.05000?key=<your Census API key>",
 									"protocol": "https",
 									"host": [
 										"factfinder",
@@ -698,7 +698,7 @@
 									"query": [
 										{
 											"key": "key",
-											"value": "<you API key>"
+											"value": "<your Census API key>"
 										}
 									]
 								}
@@ -721,7 +721,7 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://factfinder.census.gov/service/data/v1/en/programs/DEC/datasets/10_SF1/tables/P2/data/0400000US36.05000?key=<you API key>",
+									"raw": "https://factfinder.census.gov/service/data/v1/en/programs/DEC/datasets/10_SF1/tables/P2/data/0400000US36.05000?key=<your Census API key>",
 									"protocol": "https",
 									"host": [
 										"factfinder",
@@ -745,7 +745,7 @@
 									"query": [
 										{
 											"key": "key",
-											"value": "<you API key>"
+											"value": "<your Census API key>"
 										}
 									]
 								}
@@ -1048,6 +1048,53 @@
 								"census",
 								"data",
 								"getData"
+							],
+							"query": [
+								{
+									"key": "year",
+									"value": "2013"
+								},
+								{
+									"key": "stateId",
+									"value": "*"
+								},
+								{
+									"key": "dataSet",
+									"value": "acs/acs5/profile"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[CENSUS] Get ACS 5YR Profile Data with Labels",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"variableString\": [\n\"NAME\",\n\"DP03_0025E\",\n\"DP03_0062E\",\n\"DP03_0128PE\",\n\"DP02_0001PE\",\n\"DP02_0009PE\",\n\"DP05_0066PE\",\n\"DP05_0072PE\",\n\"DP05_0073PE\",\n\"DP05_0074PE\",\n\"DP05_0075PE\",\n\"DP05_0076PE\",\n\"DP05_0077PE\",\n\"DP05_0078PE\"\n]}"
+						},
+						"url": {
+							"raw": "localhost:3000/census/data/getDataWithLabels?year=2013&stateId=*&dataSet=acs/acs5/profile",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"census",
+								"data",
+								"getDataWithLabels"
 							],
 							"query": [
 								{
