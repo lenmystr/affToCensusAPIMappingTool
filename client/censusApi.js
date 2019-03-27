@@ -48,7 +48,6 @@ exports.getDataWithLabels = async function (year, dataset, variableStringArray, 
 
     response = await poplulateLabelRowInResponse(response, year, dataset);
 
-
     return response;
 
 }
