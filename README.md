@@ -103,6 +103,7 @@ Required are:
 * year - the year for which the dataset should refer
 * dataSet - the data set from which the data should be fetched (see [Census Data] )
 * state - the id of the state for which to pull data (by default the code pulls all counties but this can be changed in code)
+* requestBody - JSon arraylist of variables to be retrieved
 
 #### [Census] Get Data with Labels
 This API retrieves the specified data from the Census dataset but also adds a row containing the labels or the variables that were included. 
@@ -110,6 +111,7 @@ Required are:
 * year - the year for which the dataset should refer
 * dataSet - the data set from which the data should be fetched (see [Census Data] )
 * state - the id of the state for which to pull data (by default the code pulls all counties but this can be changed in code)
+* requestBody - JSon arraylist of variables to be retrieved
 
 #### [Census] Get Variables
 This API retrieves the available variables for a specified dataset
