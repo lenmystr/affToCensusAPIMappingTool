@@ -82,6 +82,7 @@ There are 4 APIs available in the tool as described below.
 #### Get Column Mapping Table
 This is the API that when provided and AFF table to map from produces the mapping from an AFF table to the Census varialbe.
 Refer to [Statistical Data Metadata Model] for understanding of the parameters
+
 Required are:
 * program - the AFF Program in which the table exists
 * dataSet - the data set in which the table exists
@@ -91,6 +92,7 @@ Required are:
 #### [AFF] Get Table Columns
 This API was used to make a call to get table data from the AFF dataset. It calls the AFF API directly but parameterizes the call for ease of use.
 Refer to [Statistical Data Metadata Model] for understanding of the parameters
+
 Required are:
 * program - the AFF Program in which the data exists
 * dataSet - the data set in which the data exists
@@ -99,6 +101,7 @@ Required are:
 
 #### [Census] Get Data
 This API retrieves the specified data from the Census dataset. 
+
 Required are:
 * year - the year for which the dataset should refer
 * dataSet - the data set from which the data should be fetched (see [Census Data] )
@@ -107,6 +110,7 @@ Required are:
 
 #### [Census] Get Data with Labels
 This API retrieves the specified data from the Census dataset but also adds a row containing the labels or the variables that were included. 
+
 Required are:
 * year - the year for which the dataset should refer
 * dataSet - the data set from which the data should be fetched (see [Census Data] )
@@ -115,6 +119,7 @@ Required are:
 
 #### [Census] Get Variables
 This API retrieves the available variables for a specified dataset
+
 Required are:
 * year - the year for which the dataset should refer
 * dataSet - the data set for which the variables should be fetched (see [Census Data] )
