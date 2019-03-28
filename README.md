@@ -60,8 +60,67 @@ To setup this project:
 
 `npm start`
 
+Server will run on port 3000
+
+## Postman Collection
+
+I've included the PostMan collection in a folder called "postManCollection".
+
+There are 3 folders.
+
+### Census API
+This is just a collection of Census API calls that were used to fetch data from the Census dataset for analysis and validation
+
+### AFF API
+This is just a collection of AFF API calls that were used to fetch data from the AFF dataset for analysis and validation
+
+### MappingTool APIs
+These are the APIs that are provided by the tool.
+
+There are 4 APIs available in the tool as described below.
+
+#### Get Column Mapping Table
+This is the API that when provided and AFF table to map from produces the mapping from an AFF table to the Census varialbe.
+Refer to [Statistical Data Metadata Model] for understanding of the parameters
+Required are:
+* program - the AFF Program in which the table exists
+* dataSet - the data set in which the table exists
+* tableId - the id of the table for which columns should be mapped
+* geoId - the geographical code for the area of the table (makes no difference for this API)
+
+#### [AFF] Get Table Columns
+This API was used to make a call to get table data from the AFF dataset. It calls the AFF API directly but parameterizes the call for ease of use.
+Refer to [Statistical Data Metadata Model] for understanding of the parameters
+Required are:
+* program - the AFF Program in which the data exists
+* dataSet - the data set in which the data exists
+* tableId - the id of the table in which the data exists
+* geoId - the geographical code for the area for which the data should be pulled
+
+#### [Census] Get Data
+This API retrieves the specified data from the Census dataset. 
+Required are:
+* year - the year for which the dataset should refer
+* dataSet - the data set from which the data should be fetched (see [Census Data] )
+* state - the id of the state for which to pull data (by default the code pulls all counties but this can be changed in code)
+
+#### [Census] Get Data with Labels
+This API retrieves the specified data from the Census dataset but also adds a row containing the labels or the variables that were included. 
+Required are:
+* year - the year for which the dataset should refer
+* dataSet - the data set from which the data should be fetched (see [Census Data] )
+* state - the id of the state for which to pull data (by default the code pulls all counties but this can be changed in code)
+
+#### [Census] Get Variables
+This API retrieves the available variables for a specified dataset
+Required are:
+* year - the year for which the dataset should refer
+* dataSet - the data set for which the variables should be fetched (see [Census Data] )
+
+The rest for the requests in this folders are just examples using the above calls
 
 [Express]: https://expressjs.com/
 [Census API Key]: https://api.census.gov/data/key_signup.html
 [Census Available Apis]: https://www.census.gov/data/developers/data-sets.html
 [Census Data]:https://api.census.gov/data.html
+[Statistical Data Metadata Model]:https://factfinder.census.gov/service/DataModel.html
